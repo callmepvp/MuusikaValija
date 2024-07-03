@@ -1,0 +1,11 @@
+Pathfinder
+Saavutus
+Lahe
+
+A walk through Arashiyama
+Lahe
+
+
+Siin on meeleolude saavutus ja lahe sarnasus 0.5, sest pooltel kordadel on saavutus ja lahe koos.
+
+iga emotsiooniga mis on üks, tuleb leida kõik seda emotsiooni sisaldavad paarid ja iga paari puhul tuleb sellele loole paari teise emotsiooni väärtusele juurde liita selle paari sarnasus, aga ainult siis, kui see juba pole 1.
