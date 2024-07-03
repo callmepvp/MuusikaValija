@@ -17,6 +17,9 @@ class Muusika:
 	def ÜmardaEmotsioonid(self, kohti):
 		for i in self.emotsioonid:
 			self.emotsioonid[i] = round(self.emotsioonid[i], kohti)
+
+	def VõtaNimi(self):
+		return self.nimi
 		
 
 def main():
@@ -77,12 +80,15 @@ def main():
 				i.LiidaEmotsioonile(j[1], ühegaPaarid[j])
 				
 	
-	for i in lood:
-		print(i.getEmotsioonid())
 
 	for i in lood:
 		i.ÜmardaEmotsioonid(2)
 						
+
+	lood.sort(key=lambda x: x.getEmotsioonid()["Chill"], reverse=True)
+	 
+	for i in lood:
+		print(i.VõtaNimi() + " Chill: " + str(i.getEmotsioonid()["Chill"]))
 	
 	# Nüüd tahaks igal lool vaadata tema emotsioone ja juurde liita
 main()
