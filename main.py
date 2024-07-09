@@ -85,10 +85,13 @@ def main():
 		i.ÜmardaEmotsioonid(2)
 						
 
-	lood.sort(key=lambda x: x.getEmotsioonid()["Chill"], reverse=True)
+
+
+	meeleolu = "Mihkel-approved"
+	lood.sort(key=lambda x: x.getEmotsioonid()[meeleolu], reverse=True)
 	 
 	for i in lood:
-		print(i.VõtaNimi() + " Chill: " + str(i.getEmotsioonid()["Chill"]))
+		print(i.VõtaNimi() + ": " + meeleolu + " " + str(i.getEmotsioonid()[meeleolu]))
 	
 	# Nüüd tahaks igal lool vaadata tema emotsioone ja juurde liita
 main()
